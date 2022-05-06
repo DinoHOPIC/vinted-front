@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <script defer="" src="./React App_files/bundle.js"></script><style>.container {
+  margin: 0 auto;
+  width: 80%;
+  /* height: 1300px; */
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  /* border: red 3px solid; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerLeft {
+  /* border: blue 3px solid; */
+  display: flex;
+  flex: 1 1;
+  align-items: center;
+  justify-content: left;
+}
+
+.headerSearchBar {
+  /* border: yellow 3px solid; */
+  display: flex;
+  align-items: center;
+  flex: 1 1;
+}
+
+.headerSearchBar > div {
+  width: 100%;
+  /* border: pink solid 1px; */
+}
+.headerSearchBar > div > input {
+  width: 80%;
+}
+
+.headerRight {
+  /* border: green 3px solid; */
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1;
+}
+
+.sectionConnect {
+  /* border: orange 1px solid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  padding: 0px 10px;
+}
+
+.sectionConnect > button {
+  border: 1px solid #0aaeb7;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 10px;
+  color: #0aaeb7;
+}
+
+.sectionSell {
+  /* border: purple solid 3px; */
+  display: flex;
+  justify-content: right;
+  align-items: center;
+
+  width: 50%;
+}
+
+.sectionSell > button {
+  border: none;
+  background-color: #0aaeb7;
+  border-radius: 5px;
+  padding: 10px 10px;
+  color: white;
+}
+.banner {
+  /* border: solid 3px brown; */
+  height: 460px;
+  /* background-image: url("https://www.vinted.fr/assets/seller-promotion/other/banner-wide-9b45d0aa9a311c4ff6013e9cf3bc2b6646468be3d2f553192c63598685fcc177.jpg"); */
+}
+
+.banner > img {
+  width: 100vw;
+  height: 100%;
+
+  object-fit: cover;
+}
+.nameArticle {
+  height: 40px;
+  /* border: blue solid 2px; */
+  text-align: left;
+  align-items: center;
+  font-size: 15px;
+  font: bold;
+}
+
+.offers {
+  display: grid;
+  /* border: red solid 1px; */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /* justify-content: space-around; */
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.articles {
+  /* border: solid purple 3px; */
+  margin-bottom: 20px;
+}
+
+.articles img:hover {
+  cursor: pointer;
+  /* background-color: #00cdbd; */
+  box-shadow: 5px 4px 5px 6px lightgray;
+}
+
+.articles img {
+  /* border: green 3px solid; */
+  width: 235px;
+  height: 362px;
+  object-fit: cover;
+}
+
+.bannerAdapt img {
+  width: 100vw;
+  height: 450px;
+  object-fit: cover;
+  clip-path: polygon(
+    3% 0,
+    7% 1%,
+    11% 0%,
+    16% 2%,
+    20% 0,
+    23% 2%,
+    28% 2%,
+    32% 1%,
+    35% 1%,
+    39% 3%,
+    41% 1%,
+    45% 0%,
+    47% 2%,
+    50% 2%,
+    53% 0,
+    58% 2%,
+    60% 2%,
+    63% 1%,
+    65% 0%,
+    67% 2%,
+    69% 2%,
+    73% 1%,
+    76% 1%,
+    79% 0,
+    82% 1%,
+    85% 0,
+    87% 1%,
+    89% 0,
+    92% 1%,
+    96% 0,
+    98% 3%,
+    99% 3%,
+    99% 6%,
+    100% 11%,
+    98% 15%,
+    100% 21%,
+    99% 28%,
+    100% 32%,
+    99% 35%,
+    99% 40%,
+    100% 43%,
+    99% 48%,
+    100% 53%,
+    100% 57%,
+    99% 60%,
+    100% 64%,
+    100% 68%,
+    99% 72%,
+    100% 75%,
+    100% 79%,
+    99% 83%,
+    100% 86%,
+    100% 90%,
+    99% 94%,
+    99% 98%,
+    95% 99%,
+    92% 99%,
+    89% 100%,
+    86% 99%,
+    83% 100%,
+    77% 99%,
+    72% 100%,
+    66% 98%,
+    62% 100%,
+    59% 99%,
+    54% 99%,
+    49% 100%,
+    46% 98%,
+    43% 100%,
+    40% 98%,
+    38% 100%,
+    35% 99%,
+    31% 100%,
+    28% 99%,
+    25% 99%,
+    22% 100%,
+    19% 99%,
+    16% 100%,
+    13% 99%,
+    10% 99%,
+    7% 100%,
+    4% 99%,
+    2% 97%,
+    1% 97%,
+    0% 94%,
+    1% 89%,
+    0% 84%,
+    1% 81%,
+    0 76%,
+    0 71%,
+    1% 66%,
+    0% 64%,
+    0% 61%,
+    0% 59%,
+    1% 54%,
+    0% 49%,
+    1% 45%,
+    0% 40%,
+    1% 37%,
+    0% 34%,
+    1% 29%,
+    0% 23%,
+    2% 20%,
+    1% 17%,
+    1% 13%,
+    0 10%,
+    1% 6%,
+    1% 3%
+  );
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9BcHAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsY0FBYztFQUNkLFVBQVU7RUFDVixvQkFBb0I7QUFDdEI7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsYUFBYTtFQUNiLDJCQUEyQjtFQUMzQixhQUFhO0VBQ2IsOEJBQThCO0FBQ2hDOztBQUVBO0VBQ0UsNEJBQTRCO0VBQzVCLGFBQWE7RUFDYixTQUFPO0VBQ1AsbUJBQW1CO0VBQ25CLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLDhCQUE4QjtFQUM5QixhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLFNBQU87QUFDVDs7QUFFQTtFQUNFLFdBQVc7RUFDWCw0QkFBNEI7QUFDOUI7QUFDQTtFQUNFLFVBQVU7QUFDWjs7QUFFQTtFQUNFLDZCQUE2QjtFQUM3QixhQUFhO0VBQ2IsOEJBQThCO0VBQzlCLFNBQU87QUFDVDs7QUFFQTtFQUNFLDhCQUE4QjtFQUM5QixhQUFhO0VBQ2IsOEJBQThCO0VBQzlCLG1CQUFtQjtFQUNuQixVQUFVO0VBQ1YsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLHVCQUF1QjtFQUN2QixrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSw4QkFBOEI7RUFDOUIsYUFBYTtFQUNiLHNCQUFzQjtFQUN0QixtQkFBbUI7O0VBRW5CLFVBQVU7QUFDWjs7QUFFQTtFQUNFLFlBQVk7RUFDWix5QkFBeUI7RUFDekIsa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQixZQUFZO0FBQ2Q7QUFDQTtFQUNFLDZCQUE2QjtFQUM3QixhQUFhO0VBQ2IsbUtBQW1LO0FBQ3JLOztBQUVBO0VBQ0UsWUFBWTtFQUNaLFlBQVk7O0VBRVosaUJBQWlCO0FBQ25CO0FBQ0E7RUFDRSxZQUFZO0VBQ1osNEJBQTRCO0VBQzVCLGdCQUFnQjtFQUNoQixtQkFBbUI7RUFDbkIsZUFBZTtFQUNmLFVBQVU7QUFDWjs7QUFFQTtFQUNFLGFBQWE7RUFDYiwyQkFBMkI7RUFDM0IsMENBQTBDO0VBQzFDLG1DQUFtQztFQUNuQyxnQkFBZ0I7RUFDaEIsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsOEJBQThCO0VBQzlCLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLGVBQWU7RUFDZiwrQkFBK0I7RUFDL0IscUNBQXFDO0FBQ3ZDOztBQUVBO0VBQ0UsNkJBQTZCO0VBQzdCLFlBQVk7RUFDWixhQUFhO0VBQ2IsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsWUFBWTtFQUNaLGFBQWE7RUFDYixpQkFBaUI7RUFDakI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7R0E2R0M7QUFDSCIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXIge1xuICBtYXJnaW46IDAgYXV0bztcbiAgd2lkdGg6IDgwJTtcbiAgLyogaGVpZ2h0OiAxMzAwcHg7ICovXG59XG5cbmhlYWRlciB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMHB4O1xuICAvKiBib3JkZXI6IHJlZCAzcHggc29saWQ7ICovXG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2Vlbjtcbn1cblxuLmhlYWRlckxlZnQge1xuICAvKiBib3JkZXI6IGJsdWUgM3B4IHNvbGlkOyAqL1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4OiAxO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGxlZnQ7XG59XG5cbi5oZWFkZXJTZWFyY2hCYXIge1xuICAvKiBib3JkZXI6IHllbGxvdyAzcHggc29saWQ7ICovXG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGZsZXg6IDE7XG59XG5cbi5oZWFkZXJTZWFyY2hCYXIgPiBkaXYge1xuICB3aWR0aDogMTAwJTtcbiAgLyogYm9yZGVyOiBwaW5rIHNvbGlkIDFweDsgKi9cbn1cbi5oZWFkZXJTZWFyY2hCYXIgPiBkaXYgPiBpbnB1dCB7XG4gIHdpZHRoOiA4MCU7XG59XG5cbi5oZWFkZXJSaWdodCB7XG4gIC8qIGJvcmRlcjogZ3JlZW4gM3B4IHNvbGlkOyAqL1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gIGZsZXg6IDE7XG59XG5cbi5zZWN0aW9uQ29ubmVjdCB7XG4gIC8qIGJvcmRlcjogb3JhbmdlIDFweCBzb2xpZDsgKi9cbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICB3aWR0aDogNTAlO1xuICBwYWRkaW5nOiAwcHggMTBweDtcbn1cblxuLnNlY3Rpb25Db25uZWN0ID4gYnV0dG9uIHtcbiAgYm9yZGVyOiAxcHggc29saWQgIzBhYWViNztcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgcGFkZGluZzogMTBweCAxMHB4O1xuICBjb2xvcjogIzBhYWViNztcbn1cblxuLnNlY3Rpb25TZWxsIHtcbiAgLyogYm9yZGVyOiBwdXJwbGUgc29saWQgM3B4OyAqL1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHJpZ2h0O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuXG4gIHdpZHRoOiA1MCU7XG59XG5cbi5zZWN0aW9uU2VsbCA+IGJ1dHRvbiB7XG4gIGJvcmRlcjogbm9uZTtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzBhYWViNztcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBwYWRkaW5nOiAxMHB4IDEwcHg7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cbi5iYW5uZXIge1xuICAvKiBib3JkZXI6IHNvbGlkIDNweCBicm93bjsgKi9cbiAgaGVpZ2h0OiA0NjBweDtcbiAgLyogYmFja2dyb3VuZC1pbWFnZTogdXJsKFwiaHR0cHM6Ly93d3cudmludGVkLmZyL2Fzc2V0cy9zZWxsZXItcHJvbW90aW9uL290aGVyL2Jhbm5lci13aWRlLTliNDVkMGFhOWEzMTFjNGZmNjAxM2U5Y2YzYmMyYjY2NDY0NjhiZTNkMmY1NTMxOTJjNjM1OTg2ODVmY2MxNzcuanBnXCIpOyAqL1xufVxuXG4uYmFubmVyID4gaW1nIHtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMCU7XG5cbiAgb2JqZWN0LWZpdDogY292ZXI7XG59XG4ubmFtZUFydGljbGUge1xuICBoZWlnaHQ6IDQwcHg7XG4gIC8qIGJvcmRlcjogYmx1ZSBzb2xpZCAycHg7ICovXG4gIHRleHQtYWxpZ246IGxlZnQ7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGZvbnQtc2l6ZTogMTVweDtcbiAgZm9udDogYm9sZDtcbn1cblxuLm9mZmVycyB7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIC8qIGJvcmRlcjogcmVkIHNvbGlkIDFweDsgKi9cbiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMWZyIDFmciAxZnIgMWZyO1xuICAvKiBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDsgKi9cbiAgbWFyZ2luLXRvcDogMjBweDtcbiAgbWFyZ2luLWJvdHRvbTogNjBweDtcbn1cblxuLmFydGljbGVzIHtcbiAgLyogYm9yZGVyOiBzb2xpZCBwdXJwbGUgM3B4OyAqL1xuICBtYXJnaW4tYm90dG9tOiAyMHB4O1xufVxuXG4uYXJ0aWNsZXMgaW1nOmhvdmVyIHtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICAvKiBiYWNrZ3JvdW5kLWNvbG9yOiAjMDBjZGJkOyAqL1xuICBib3gtc2hhZG93OiA1cHggNHB4IDVweCA2cHggbGlnaHRncmF5O1xufVxuXG4uYXJ0aWNsZXMgaW1nIHtcbiAgLyogYm9yZGVyOiBncmVlbiAzcHggc29saWQ7ICovXG4gIHdpZHRoOiAyMzVweDtcbiAgaGVpZ2h0OiAzNjJweDtcbiAgb2JqZWN0LWZpdDogY292ZXI7XG59XG5cbi5iYW5uZXJBZGFwdCBpbWcge1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogNDUwcHg7XG4gIG9iamVjdC1maXQ6IGNvdmVyO1xuICBjbGlwLXBhdGg6IHBvbHlnb24oXG4gICAgMyUgMCxcbiAgICA3JSAxJSxcbiAgICAxMSUgMCUsXG4gICAgMTYlIDIlLFxuICAgIDIwJSAwLFxuICAgIDIzJSAyJSxcbiAgICAyOCUgMiUsXG4gICAgMzIlIDElLFxuICAgIDM1JSAxJSxcbiAgICAzOSUgMyUsXG4gICAgNDElIDElLFxuICAgIDQ1JSAwJSxcbiAgICA0NyUgMiUsXG4gICAgNTAlIDIlLFxuICAgIDUzJSAwLFxuICAgIDU4JSAyJSxcbiAgICA2MCUgMiUsXG4gICAgNjMlIDElLFxuICAgIDY1JSAwJSxcbiAgICA2NyUgMiUsXG4gICAgNjklIDIlLFxuICAgIDczJSAxJSxcbiAgICA3NiUgMSUsXG4gICAgNzklIDAsXG4gICAgODIlIDElLFxuICAgIDg1JSAwLFxuICAgIDg3JSAxJSxcbiAgICA4OSUgMCxcbiAgICA5MiUgMSUsXG4gICAgOTYlIDAsXG4gICAgOTglIDMlLFxuICAgIDk5JSAzJSxcbiAgICA5OSUgNiUsXG4gICAgMTAwJSAxMSUsXG4gICAgOTglIDE1JSxcbiAgICAxMDAlIDIxJSxcbiAgICA5OSUgMjglLFxuICAgIDEwMCUgMzIlLFxuICAgIDk5JSAzNSUsXG4gICAgOTklIDQwJSxcbiAgICAxMDAlIDQzJSxcbiAgICA5OSUgNDglLFxuICAgIDEwMCUgNTMlLFxuICAgIDEwMCUgNTclLFxuICAgIDk5JSA2MCUsXG4gICAgMTAwJSA2NCUsXG4gICAgMTAwJSA2OCUsXG4gICAgOTklIDcyJSxcbiAgICAxMDAlIDc1JSxcbiAgICAxMDAlIDc5JSxcbiAgICA5OSUgODMlLFxuICAgIDEwMCUgODYlLFxuICAgIDEwMCUgOTAlLFxuICAgIDk5JSA5NCUsXG4gICAgOTklIDk4JSxcbiAgICA5NSUgOTklLFxuICAgIDkyJSA5OSUsXG4gICAgODklIDEwMCUsXG4gICAgODYlIDk5JSxcbiAgICA4MyUgMTAwJSxcbiAgICA3NyUgOTklLFxuICAgIDcyJSAxMDAlLFxuICAgIDY2JSA5OCUsXG4gICAgNjIlIDEwMCUsXG4gICAgNTklIDk5JSxcbiAgICA1NCUgOTklLFxuICAgIDQ5JSAxMDAlLFxuICAgIDQ2JSA5OCUsXG4gICAgNDMlIDEwMCUsXG4gICAgNDAlIDk4JSxcbiAgICAzOCUgMTAwJSxcbiAgICAzNSUgOTklLFxuICAgIDMxJSAxMDAlLFxuICAgIDI4JSA5OSUsXG4gICAgMjUlIDk5JSxcbiAgICAyMiUgMTAwJSxcbiAgICAxOSUgOTklLFxuICAgIDE2JSAxMDAlLFxuICAgIDEzJSA5OSUsXG4gICAgMTAlIDk5JSxcbiAgICA3JSAxMDAlLFxuICAgIDQlIDk5JSxcbiAgICAyJSA5NyUsXG4gICAgMSUgOTclLFxuICAgIDAlIDk0JSxcbiAgICAxJSA4OSUsXG4gICAgMCUgODQlLFxuICAgIDElIDgxJSxcbiAgICAwIDc2JSxcbiAgICAwIDcxJSxcbiAgICAxJSA2NiUsXG4gICAgMCUgNjQlLFxuICAgIDAlIDYxJSxcbiAgICAwJSA1OSUsXG4gICAgMSUgNTQlLFxuICAgIDAlIDQ5JSxcbiAgICAxJSA0NSUsXG4gICAgMCUgNDAlLFxuICAgIDElIDM3JSxcbiAgICAwJSAzNCUsXG4gICAgMSUgMjklLFxuICAgIDAlIDIzJSxcbiAgICAyJSAyMCUsXG4gICAgMSUgMTclLFxuICAgIDElIDEzJSxcbiAgICAwIDEwJSxcbiAgICAxJSA2JSxcbiAgICAxJSAzJVxuICApO1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style></head>
+  <body cz-shortcut-listen="true">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div><nav><a href="http://localhost:3000/"> Home </a><a href="http://localhost:3000/Offer"> Offer </a></nav><div class="container"><header><div class="headerLeft "><img src="./React App_files/logo.3ec501e0dd585a4470805f6946bdcaf0.svg" alt="logo-vinted"></div><div class="headerSearchBar"><div><input type="text"></div></div><div class="headerRight"><div class="sectionConnect"><button>S'inscrire</button><button>Se connecter</button></div><div class="sectionSell"><button>Vends tes articles</button></div></div></header></div></div><div><div class="bannerAdapt"><img src="./React App_files/banner-vinted.8bb1c2ce96f1be1454fd.jpg" alt=""></div><div class="offers container"><div class="articles"><div class="nameArticle"><div>Noëlle_Poirier72</div></div><a href="http://localhost:3000/offer/62014e77c00de47d92e8beff"><div><img src="./React App_files/preview.jpg" alt=""></div></a><div>25 €</div><div><div><div></div><div>STRADIVARIUS</div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Bernadette_Fontaine</div></div><a href="http://localhost:3000/offer/62014e79c00de47d92e8bf01"><div><img src="./React App_files/preview(1).jpg" alt=""></div></a><div>5.9 €</div><div><div><div></div><div>H&amp;M</div></div><div><div>6 ANS / 110-116 CM</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Francia.Giraud2</div></div><a href="http://localhost:3000/offer/62014e7bc00de47d92e8bf03"><div><img src="./React App_files/preview(2).jpg" alt=""></div></a><div>28 €</div><div><div><div></div><div>SPRINGFIELD </div></div><div><div>M / 38 / 10</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Alix65</div></div><a href="http://localhost:3000/offer/62014e7cc00de47d92e8bf05"><div><img src="./React App_files/preview(3).jpg" alt=""></div></a><div>10 €</div><div><div><div></div><div>JENNYFER</div></div><div><div>M / 38 / 10</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Bernadette_Fontaine</div></div><a href="http://localhost:3000/offer/62014e7fc00de47d92e8bf07"><div><img src="./React App_files/preview(4).jpg" alt=""></div></a><div>15 €</div><div><div><div></div><div>TULIPANO</div></div><div><div>37</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Alix65</div></div><a href="http://localhost:3000/offer/62014e82c00de47d92e8bf09"><div><img src="./React App_files/preview(5).jpg" alt=""></div></a><div>25 €</div><div><div><div></div><div>H&amp;M</div></div><div><div>S / 36 / 8</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Jeanne14</div></div><a href="http://localhost:3000/offer/62014e87c00de47d92e8bf0b"><div><img src="./React App_files/preview(6).jpg" alt=""></div></a><div>15 €</div><div><div><div></div><div>VAN LAACK</div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Francia.Giraud2</div></div><a href="http://localhost:3000/offer/62014e8cc00de47d92e8bf0d"><div><img src="./React App_files/preview(7).jpg" alt=""></div></a><div>5.9 €</div><div><div><div></div><div>ZARA</div></div><div><div>9-12 MOIS / 74-80 CM</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Alphonsine.Paul</div></div><a href="http://localhost:3000/offer/62014e90c00de47d92e8bf0f"><div><img src="./React App_files/preview(8).jpg" alt=""></div></a><div>180 €</div><div><div><div></div><div>NIKE</div></div><div><div>38.5</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Séverine.Arnaud7</div></div><a href="http://localhost:3000/offer/62014e94c00de47d92e8bf11"><div><img src="./React App_files/preview(9).jpg" alt=""></div></a><div>27.5 €</div><div><div><div></div><div>LEVI'S</div></div><div><div>L</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Mathilde_Barre4</div></div><a href="http://localhost:3000/offer/62014e99c00de47d92e8bf13"><div><img src="./React App_files/preview(10).jpg" alt=""></div></a><div>13 €</div><div><div><div></div><div>TIENDA LOCAL</div></div><div><div>XL / 42 / 14</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Jeanne14</div></div><a href="http://localhost:3000/offer/62014e9bc00de47d92e8bf15"><div><img src="./React App_files/preview(11).jpg" alt=""></div></a><div>10 €</div><div><div><div></div><div>VINTAGE</div></div><div><div>TAILLE UNIQUE</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Alix65</div></div><a href="http://localhost:3000/offer/62014ea0c00de47d92e8bf17"><div><img src="./React App_files/preview(12).jpg" alt=""></div></a><div>38 €</div><div><div><div></div><div>NIKE</div></div><div><div>M</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Ansbert12</div></div><a href="http://localhost:3000/offer/62014ea5c00de47d92e8bf19"><div><img src="./React App_files/preview(13).jpg" alt=""></div></a><div>10 €</div><div><div><div></div><div>THE NORTH FACE</div></div><div><div>S</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Ansbert12</div></div><a href="http://localhost:3000/offer/62014ea8c00de47d92e8bf1b"><div><img src="./React App_files/preview(14).jpg" alt=""></div></a><div>40 €</div><div><div><div></div><div>THE KOOPLES</div></div><div><div>S / 36 / 8</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Alix65</div></div><a href="http://localhost:3000/offer/62014eacc00de47d92e8bf1d"><div><img src="./React App_files/preview(15).jpg" alt=""></div></a><div>40 €</div><div><div><div></div><div>BALZAC PARIS</div></div><div><div>XS / 34 / 6</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Constantin.Julien38</div></div><a href="http://localhost:3000/offer/62014eb0c00de47d92e8bf1f"><div><img src="./React App_files/preview(16).jpg" alt=""></div></a><div>25 €</div><div><div><div></div><div>BA&amp;SH</div></div><div><div>XS / 34 / 6</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Céleste21</div></div><a href="http://localhost:3000/offer/62014eb5c00de47d92e8bf21"><div><img src="./React App_files/preview(17).jpg" alt=""></div></a><div>30 €</div><div><div><div></div><div>SANDRO</div></div><div><div>S / 36 / 8</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Pétronille.Brunet</div></div><a href="http://localhost:3000/offer/62014eb9c00de47d92e8bf23"><div><img src="./React App_files/preview(18).jpg" alt=""></div></a><div>20 €</div><div><div><div></div><div>IKITO</div></div><div><div>S / 36 / 8</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Alix65</div></div><a href="http://localhost:3000/offer/62014ebec00de47d92e8bf25"><div><img src="./React App_files/preview(19).jpg" alt=""></div></a><div>45 €</div><div><div><div></div><div>MAJE</div></div><div><div>S / 36 / 8</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Fidèle80</div></div><a href="http://localhost:3000/offer/62014ec2c00de47d92e8bf27"><div><img src="./React App_files/preview(20).jpg" alt=""></div></a><div>18 €</div><div><div><div></div><div>ZARA</div></div><div><div>XS / 34 / 6</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Bernadette_Fontaine</div></div><a href="http://localhost:3000/offer/62014ec6c00de47d92e8bf29"><div><img src="./React App_files/preview(21).jpg" alt=""></div></a><div>90 €</div><div><div><div></div><div>BRIXTOL TEXTILES</div></div><div><div>S / 36 / 8</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Bernadette_Fontaine</div></div><a href="http://localhost:3000/offer/62014ecac00de47d92e8bf2b"><div><img src="./React App_files/preview(22).jpg" alt=""></div></a><div>15 €</div><div><div><div></div><div>BELLEROSE</div></div><div><div>S / 36 / 8</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Séverine.Arnaud7</div></div><a href="http://localhost:3000/offer/62014ecec00de47d92e8bf2d"><div><img src="./React App_files/preview(23).jpg" alt=""></div></a><div>95 €</div><div><div><div></div><div>HEIMSTONE</div></div><div><div>XS / 34 / 6</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Mélodie89</div></div><a href="http://localhost:3000/offer/62014ed2c00de47d92e8bf2f"><div><img src="./React App_files/preview(24).jpg" alt=""></div></a><div>75 €</div><div><div><div></div><div>ROUJE</div></div><div><div>XS / 34 / 6</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Alix65</div></div><a href="http://localhost:3000/offer/62014ed6c00de47d92e8bf31"><div><img src="./React App_files/preview(25).jpg" alt=""></div></a><div>30 €</div><div><div><div></div><div>ZADIG &amp; VOLTAIRE</div></div><div><div>S / 36 / 8</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Nicéphore_Cousin85</div></div><a href="http://localhost:3000/offer/62014edac00de47d92e8bf33"><div><img src="./React App_files/preview(26).jpg" alt=""></div></a><div>50 €</div><div><div><div></div><div>ROSEANNA</div></div><div><div>XS / 34 / 6</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Éliane.David</div></div><a href="http://localhost:3000/offer/62014edec00de47d92e8bf35"><div><img src="./React App_files/preview(27).jpg" alt=""></div></a><div>40 €</div><div><div><div></div><div>MANOUSH</div></div><div><div>XS / 34 / 6</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Alix65</div></div><a href="http://localhost:3000/offer/62014ee2c00de47d92e8bf37"><div><img src="./React App_files/preview(28).jpg" alt=""></div></a><div>40 €</div><div><div><div></div><div>MANOUSH</div></div><div><div>S / 36 / 8</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Nicéphore_Cousin85</div></div><a href="http://localhost:3000/offer/62014ee7c00de47d92e8bf39"><div><img src="./React App_files/preview(29).jpg" alt=""></div></a><div>80 €</div><div><div><div></div><div>MAISON SARAH LAVOINE</div></div><div><div>S / 36 / 8</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Anatole.Nicolas87</div></div><a href="http://localhost:3000/offer/62014eeac00de47d92e8bf3b"><div><img src="./React App_files/preview(30).jpg" alt=""></div></a><div>45 €</div><div><div><div></div><div>SANDRO</div></div><div><div>S / 36 / 8</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Charlaine_Guillaume</div></div><a href="http://localhost:3000/offer/62014eefc00de47d92e8bf3d"><div><img src="./React App_files/preview(31).jpg" alt=""></div></a><div>40 €</div><div><div><div></div><div>DVF DIANE VON FURSTENBERG</div></div><div><div>S / 36 / 8</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>Brice</div></div><a href="http://localhost:3000/offer/620a2f809c542a00182dc0fa"><div><img src="./React App_files/preview(32).jpg" alt=""></div></a><div>4 €</div><div><div><div></div><div>Zara</div></div><div><div>M</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>mimitch</div></div><a href="http://localhost:3000/offer/62603fa1d3752b0018c51815"><div><img src="./React App_files/preview(33).jpg" alt=""></div></a><div>12 €</div><div><div><div></div><div>fsfs</div></div><div><div>43</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>nuts</div></div><a href="http://localhost:3000/offer/626825746ca9a6001850b1ff"><div><img src="./React App_files/preview(34).jpg" alt=""></div></a><div>100 €</div><div><div><div></div><div>fdqf</div></div><div><div>fsqf</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>bibite</div></div><a href="http://localhost:3000/offer/62717faeb3fd5300189f6722"><div><img src="./React App_files/preview(35).jpg" alt=""></div></a><div>23 €</div><div><div><div></div><div>fdqsfs</div></div><div><div>34</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div class="articles"><div class="nameArticle"><div>bibite</div></div><a href="http://localhost:3000/offer/62718027b3fd5300189f6741"><div><img src="./React App_files/preview(36).jpg" alt=""></div></a><div>333 €</div><div><div><div></div><div>fsqf</div></div><div><div>23</div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div><div><div></div><div></div></div></div></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+</body></html>

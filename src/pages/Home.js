@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-export default function Home() {
+const Home = () => {
   const [data, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
 
@@ -71,4 +71,6 @@ export default function Home() {
   //     <img src={bannerImg} alt="" />
   //   </div>
   // </div>
-}
+};
+
+export default Home;

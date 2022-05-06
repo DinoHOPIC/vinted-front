@@ -238,3 +238,39 @@ header {
     1% 3%
   );
 }
+
+.signUpPage {
+  display: flex;
+  justify-content: center;
+  /* border: #2cb1ba solid 3px; */
+  width: 20%;
+  height: 500px;
+}
+h1 {
+  text-align: center;
+}
+.divButton {
+  width: 100%;
+
+  /* border: red 2px solid; */
+  background-color: white;
+  border-bottom: red 1px solid;
+  box-sizing: border-box;
+}
+.inputButton {
+  width: 100%;
+  border: none;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.newletterCheck {
+  margin-top: 20px;
+  color: grey;
+}
+
+.textNewsletter {
+  padding: 20px 10px;
+  font-size: 12px;
+  /* border: blueviolet 1px solid; */
+}
