@@ -4,14 +4,12 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div>
-      <nav>
-        <Link to="/"> Home </Link>
-        <Link to="/Offer"> Offer </Link>
-      </nav>
       <div className="container">
         <header>
           <div className="headerLeft ">
-            <img src={Logo} alt="logo-vinted" />
+            <Link to="/">
+              <img src={Logo} alt="logo-vinted" />
+            </Link>
           </div>
           <div className="headerSearchBar">
             <div>
@@ -20,8 +18,12 @@ const Header = () => {
           </div>
           <div className="headerRight">
             <div className="sectionConnect">
-              <button>S'inscrire</button>
-              <button>Se connecter</button>
+              <Link to="/signUp">
+                <button>S'inscrire</button>
+              </Link>
+              <Link to="/login">
+                <button>Se connecter</button>
+              </Link>
             </div>
             <div className="sectionSell">
               <button>Vends tes articles</button>

@@ -127,7 +127,7 @@ const SignUp = ({ setUser }) => {
             </p>
           </Link>
         </div>
-        <p style={{ color: "red" }}>{errorMessage}</p>
+        <p style={{ color: "red", textAlign: "center" }}>{errorMessage}</p>
       </div>
     </div>
   );
