@@ -46,6 +46,11 @@ const Offer = () => {
           );
         })}
       </div>
+      <div>
+        {/* <Link to="/payment" style={{ textDecoration: "none" }}> */}
+        <button>ACHETER</button>
+        {/* </Link> */}
+      </div>
     </div>
   );
 };

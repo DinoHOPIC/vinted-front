@@ -8,6 +8,7 @@ import Offer from "./pages/Offer";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import Publish from "./pages/Publish";
+// import Payment from "./pages/Payment";
 
 //import de mes components
 import Header from "./components/Header";
@@ -44,6 +45,7 @@ function App() {
           path="/offer/publish"
           element={<Publish token={token} />}
         ></Route>
+        {/* <Route path="/payment" element={<Payment token={token} />} /> */}
       </Routes>
     </Router>
   );
