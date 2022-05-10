@@ -1,13 +1,14 @@
 import Logo from "../assets/img/logo.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ token, setUser }) => {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="container">
         <header>
           <div className="headerLeft ">
-            <Link to="/">
+            <Link to="/" style={{ textDecoration: "none" }}>
               <img src={Logo} alt="logo-vinted" />
             </Link>
           </div>
@@ -17,17 +18,54 @@ const Header = () => {
             </div>
           </div>
           <div className="headerRight">
-            <div className="sectionConnect">
-              <Link to="/signUp">
-                <button>S'inscrire</button>
-              </Link>
-              <Link to="/login">
-                <button>Se connecter</button>
-              </Link>
-            </div>
-            <div className="sectionSell">
-              <button>Vends tes articles</button>
-            </div>
+            {token === null ? (
+              <div className="sectionConnect">
+                <Link
+                  to="/signUp"
+                  className="sectionConnect"
+                  style={{ textDecoration: "none" }}
+                >
+                  <button>S'inscrire</button>
+                </Link>
+                <Link
+                  to="/login"
+                  className="sectionConnect"
+                  style={{ textDecoration: "none" }}
+                >
+                  <button>Se connecter</button>
+                </Link>
+                <div className="sectionSell">
+                  <Link
+                    to="/login"
+                    className="sectionConnect"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <button>Vends tes articles</button>
+                  </Link>
+                </div>
+              </div>
+            ) : (
+              <div>
+                <button
+                  className="disconnectButton"
+                  onClick={() => {
+                    setUser(null);
+                    navigate("/");
+                  }}
+                >
+                  Se déconnecter
+                </button>
+                <div className="sectionSell">
+                  <Link
+                    to="/offer/publish"
+                    className="sectionConnect"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <button>Vends tes articles</button>
+                  </Link>
+                </div>
+              </div>
+            )}
           </div>
         </header>
       </div>

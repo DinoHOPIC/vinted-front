@@ -1,4 +1,4 @@
-import bannerImg from "../assets/img/banner-vinted.jpg";
+// import bannerImg from "../assets/img/banner-vinted.jpg";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -27,22 +27,27 @@ const Home = () => {
     <span>En cours de chargement ...</span>
   ) : (
     <div>
-      <div className="bannerAdapt">
-        <img src={bannerImg} alt="" />
+      <div className="bannerAdapt container">
+        <div className="startToSellBanner  ">
+          <div>Prêts à faire du tri dans vos placard</div>
+          <button>Commencer à vendre</button>
+        </div>
       </div>
 
       <div className="offers container">
         {data.offers.map((offer, indexOffer) => {
           return (
             <div key={indexOffer} className="articles">
-              <div className="nameArticle">
-                {/* <img
-                  key={indexOffer}
-                  src={offer.owner.account.avatar.secure_url}
-                  alt=""
-                ></img> */}
-                <div>{offer.owner.account.username}</div>
-              </div>
+              {/* <>
+                {offer.owner.account.avatar.secure_url && (
+                  <img
+                    key={indexOffer}
+                    src={offer.owner.account.avatar.secure_url}
+                    alt=""
+                  ></img>
+                )}
+              </> */}
+              <div>{offer.owner.account.username}</div>
               <Link to={`/offer/${offer._id}`} key={offer._id}>
                 <div>
                   <img src={offer.product_image.secure_url} alt="" />
@@ -65,12 +70,6 @@ const Home = () => {
       </div>
     </div>
   );
-
-  // <div>
-  //   <div className="banner">
-  //     <img src={bannerImg} alt="" />
-  //   </div>
-  // </div>
 };
 
 export default Home;
