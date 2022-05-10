@@ -22,10 +22,19 @@ const Offer = () => {
   return isLoading === true ? (
     <div>En cours de chargement</div>
   ) : (
-    <div>
+    <div
+      style={{
+        justifyContent: "center",
+        display: "flex",
+        alignItems: "center",
+        flexDirection: "column",
+      }}
+    >
       <h2>{data.product_name}</h2>
-      {/* <span>{data.product_pictures}</span> */}
-      <span>{data.product_price}</span>
+      <img src={data.product_image.secure_url} alt="" />
+
+      <div>{data.product_price} €</div>
+
       <div>
         {data.product_details.map((item, index) => {
           const keys = Object.keys(item);

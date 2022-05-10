@@ -9,12 +9,12 @@ const Publish = ({ token }) => {
   const navigate = useNavigate();
   const [picture, setPicture] = useState(null);
   const [title, setTitle] = useState("");
-  const [descriptionArticle, setDescriptionArticle] = useState("");
+  const [description, setDescription] = useState("");
   const [brand, setBrand] = useState("");
   const [size, setSize] = useState("");
   const [color, setColor] = useState("");
-  const [stateOfProduct, setStateOfProduct] = useState("");
-  const [location, setLocation] = useState("");
+  const [condition, setCondition] = useState("");
+  const [city, setCity] = useState("");
   const [price, setPrice] = useState("");
   const [exchange, setExchange] = useState(false);
 
@@ -32,12 +32,12 @@ const Publish = ({ token }) => {
       const formData = new FormData();
       formData.append("picture", picture);
       formData.append("title", title);
-      formData.append("descriptionArticle", descriptionArticle);
+      formData.append("description", description);
       formData.append("brand", brand);
       formData.append("size", size);
       formData.append("color", color);
-      formData.append("stateOfProduct", stateOfProduct);
-      formData.append("location", location);
+      formData.append("condition", condition);
+      formData.append("city", city);
       formData.append("price", price);
       formData.append("exchange", exchange);
 
@@ -46,7 +46,7 @@ const Publish = ({ token }) => {
         formData,
         {
           headers: {
-            autorization: `Bearer ${token}`,
+            authorization: `Bearer ${token}`,
             "Content-Type": "multipart/form-data",
           },
         }
@@ -57,7 +57,7 @@ const Publish = ({ token }) => {
         navigate(`/offer/${response.data._id}`);
       }
     } catch (error) {
-      console.log(error);
+      console.log(error.response);
     }
   };
 
@@ -97,9 +97,9 @@ const Publish = ({ token }) => {
                 <input
                   type="text"
                   placeholder="ex: porté quelquefois, taille correctement"
-                  value={descriptionArticle}
+                  value={description}
                   onChange={(event) => {
-                    setDescriptionArticle(event.target.value);
+                    setDescription(event.target.value);
                   }}
                 />
               </div>
@@ -153,9 +153,9 @@ const Publish = ({ token }) => {
                 <input
                   type="text"
                   placeholder="ex: Neuf avec étiquette"
-                  value={stateOfProduct}
+                  value={condition}
                   onChange={(event) => {
-                    setStateOfProduct(event.target.value);
+                    setCondition(event.target.value);
                   }}
                 />
               </div>
@@ -166,9 +166,9 @@ const Publish = ({ token }) => {
                 <input
                   type="text"
                   placeholder="ex: Paris"
-                  value={location}
+                  value={city}
                   onChange={(event) => {
-                    setLocation(event.target.value);
+                    setCity(event.target.value);
                   }}
                 />
               </div>
