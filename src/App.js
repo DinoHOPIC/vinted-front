@@ -4,7 +4,7 @@ import { useState } from "react";
 
 // import de mes pages
 import Home from "./pages/Home";
-// import Offer from "./pages/Offer";
+import Offer from "./pages/Offer";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import Publish from "./pages/Publish";
@@ -37,7 +37,7 @@ function App() {
       <Header token={token} setUser={setUser} />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        {/* <Route path="/offer/:productId" element={<Offer />}></Route> */}
+        <Route path="/offer/:id" element={<Offer />}></Route>
         <Route path="/signUp" element={<SignUp setUser={setUser} />}></Route>
         <Route path="/login" element={<Login setUser={setUser} />}></Route>
         <Route

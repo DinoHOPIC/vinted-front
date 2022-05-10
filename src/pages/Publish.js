@@ -1,6 +1,6 @@
 import "../App.css";
 import { useState } from "react";
-// import cookies from "js-cookie";
+// import Cookies from "js-cookie";
 import axios from "axios";
 import { Navigate, useNavigate } from "react-router-dom";
 
@@ -22,7 +22,7 @@ const Publish = ({ token }) => {
   // const [data, setData] = useState(null);
   // const [isPictureSending, setIsPictureSending] = useState(false);
 
-  // const token = cookies.get("usertToken");
+  // const token = Cookies.get("usertToken");
 
   const handelSubmit = async (event) => {
     try {
@@ -85,7 +85,7 @@ const Publish = ({ token }) => {
                   placeholder="ex: Chemise Sézane verte"
                   value={title}
                   onChange={(event) => {
-                    setTitle(event.target.value[0]);
+                    setTitle(event.target.value);
                   }}
                 />
               </div>
@@ -99,7 +99,7 @@ const Publish = ({ token }) => {
                   placeholder="ex: porté quelquefois, taille correctement"
                   value={descriptionArticle}
                   onChange={(event) => {
-                    setDescriptionArticle(event.target.value[0]);
+                    setDescriptionArticle(event.target.value);
                   }}
                 />
               </div>
@@ -116,7 +116,7 @@ const Publish = ({ token }) => {
                   placeholder="ex: Zara"
                   value={brand}
                   onChange={(event) => {
-                    setBrand(event.target.value[0]);
+                    setBrand(event.target.value);
                   }}
                 />
               </div>
@@ -129,7 +129,7 @@ const Publish = ({ token }) => {
                   placeholder="ex: L / 40 / 12"
                   value={size}
                   onChange={(event) => {
-                    setSize(event.target.value[0]);
+                    setSize(event.target.value);
                   }}
                 />
               </div>
@@ -142,7 +142,7 @@ const Publish = ({ token }) => {
                   placeholder="ex: Rouge"
                   value={color}
                   onChange={(event) => {
-                    setColor(event.target.value[0]);
+                    setColor(event.target.value);
                   }}
                 />
               </div>
@@ -155,7 +155,7 @@ const Publish = ({ token }) => {
                   placeholder="ex: Neuf avec étiquette"
                   value={stateOfProduct}
                   onChange={(event) => {
-                    setStateOfProduct(event.target.value[0]);
+                    setStateOfProduct(event.target.value);
                   }}
                 />
               </div>
@@ -168,7 +168,7 @@ const Publish = ({ token }) => {
                   placeholder="ex: Paris"
                   value={location}
                   onChange={(event) => {
-                    setLocation(event.target.value[0]);
+                    setLocation(event.target.value);
                   }}
                 />
               </div>
@@ -182,11 +182,11 @@ const Publish = ({ token }) => {
                 <div className="test">Prix</div>
                 <div className="test">
                   <input
-                    type="number"
+                    type="text"
                     placeholder=" 0,00€"
                     value={price}
                     onChange={(event) => {
-                      setPrice(event.target.value[0]);
+                      setPrice(event.target.value);
                     }}
                   />
                 </div>
@@ -196,7 +196,7 @@ const Publish = ({ token }) => {
                 <input
                   type="checkBox"
                   onChange={(event) => {
-                    setExchange(event.target.value[0]);
+                    setExchange(!exchange);
                   }}
                 />
                 <p>Je suis intéressé par les échanges</p>

@@ -35,13 +35,7 @@ const Header = ({ token, setUser }) => {
                   <button>Se connecter</button>
                 </Link>
                 <div className="sectionSell">
-                  <Link
-                    to="/login"
-                    className="sectionConnect"
-                    style={{ textDecoration: "none" }}
-                  >
-                    <button>Vends tes articles</button>
-                  </Link>
+                  <button>Vends tes articles</button>
                 </div>
               </div>
             ) : (
